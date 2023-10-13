@@ -3,6 +3,6 @@
   І так само визначте змінну, яка може приймати тільки одне з двох рядкових значень: 'enable' або 'disable' (literal type)?
 */
 
-let union: string | number | boolean;
+let union: string | number;
 
 let literal: 'enable' | 'disable';

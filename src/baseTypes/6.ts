@@ -2,28 +2,16 @@
   Як ви вкажете типи для аргументів і значень цих функцій, що повертаються?
 */
 
-function showMessage(message: string) {
+function showMessage(message: string): void {
   console.log(message);
 }
 
-function calc(num1: number, num2: number) {
+function calc(num1: number, num2: number): number {
   return num1 + num2;
 }
 
-const result = customError();
-
-if (typeof result === 'string') {
-  
-}
-
-function customError() {
+function customError(): never {
   throw new Error('Error');
 }
-
-let errorMessage: unknown = customError(); 
-if (typeof errorMessage === 'string') {
-  console.log(errorMessage); 
-}
-
 
 export {};
